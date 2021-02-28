@@ -1,0 +1,96 @@
+.FormDiv {
+  height: 280px;
+  width: 50%;
+  background: linear-gradient(#d8d8d8, #a0a0a0);
+  margin: auto;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  border: 1px solid rgb(202, 202, 202);
+  box-shadow: 0 2px 3px #4d4b4a;
+}
+.OutterDiv {
+  margin-top: 2.5rem;
+}
+
+button {
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  /* border: 1px solid rgb(243, 243, 243); */
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+.AddControl {
+  margin: 5px 0;
+}
+.Add {
+  margin-bottom: 10px;
+  background-color: #0aad0a;
+  color: white;
+  font-weight: bold;
+  /* border: 2px solid #f8f4f4c0; */
+}
+
+.Add:hover,
+.Add:active {
+  background-color: #047209;
+  color: white;
+}
+
+.Back {
+  margin-bottom: 10px;
+  background-color: #0c21df;
+  color: white;
+  font-weight: bold;
+}
+
+.Back:hover,
+.Back:active {
+  background-color: #07097a;
+  color: white;
+}
+
+.RemoveControl {
+  position: absolute;
+  right: 27%;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.RemoveControl:hover,
+.RemoveControl:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.Input {
+  margin: 2%;
+}
+.Label {
+  margin: 1.8%;
+  font-weight: bold;
+  display: inline-block;
+  width: 130px;
+  text-align: right;
+}
+
+.InputElement {
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font: inherit;
+  padding: 6px 10px;
+  display: inline-block;
+  width: 50%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.InputElement:focus {
+  outline: none;
+  background-color: rgb(219, 240, 248);
+}

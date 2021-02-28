@@ -1,0 +1,29 @@
+.Content {
+  margin-top: 7%;
+  text-align: center;
+}
+.Header {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: #f7973d; */
+  background-image: linear-gradient(to top left, #a70599 0%, #07c0b1 100%);
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  /* z-index: 90; */
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  margin: auto;
+  display: inline;
+}
+.Logo {
+  height: 90%;
+}

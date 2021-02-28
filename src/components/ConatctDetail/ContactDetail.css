@@ -1,0 +1,30 @@
+.Output {
+  margin: 2%;
+}
+.Label {
+  margin: 1.8%;
+  font-weight: bold;
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+.OutElement {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.Button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
