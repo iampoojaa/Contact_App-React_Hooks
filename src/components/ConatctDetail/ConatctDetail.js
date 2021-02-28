@@ -25,6 +25,21 @@ const ConatctDetail = (props) => {
         setLoading(!loading);
       });
   }, []);
+  const refreshPage = () => {
+    window.location.reload();
+  };
+  const deleteContactHandler = (dataId) => {
+    axios
+      .delete(`/contact/${dataId}.json`)
+      .then((response) => {
+        setLoading(!loading);
+
+        refreshPage();
+      })
+      .catch((error) => {
+        setLoading(!loading);
+      });
+  };
 
   return (
     <div>
@@ -50,13 +65,21 @@ const ConatctDetail = (props) => {
             className="fas fa-edit"
           ></i>
         </button>
-
-        <button className={Classes.Button}>
-          <i
-            style={{ fontSize: "24px", color: "#c20e0e" }}
-            className="fa fa-trash"
-          ></i>
-        </button>
+        {contactData.map((data, index) => {
+          return props.data === data.id ? (
+            <button
+              key={index}
+              className={Classes.Button}
+              onClick={() => deleteContactHandler(props.data)}
+              // onClick={refreshPage}
+            >
+              <i
+                style={{ fontSize: "24px", color: "#c20e0e" }}
+                className="fa fa-trash"
+              ></i>
+            </button>
+          ) : null;
+        })}
       </Modal>
     </div>
   );
